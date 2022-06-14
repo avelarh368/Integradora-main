@@ -1,0 +1,78 @@
+#carousel{
+    display:grid;
+    grid-area: carousel;
+    max-height: 25vh;
+    margin: 2vh 0;
+    max-width: 95vw;
+}
+#carousel img{
+    display:block;
+    max-height: 100%;
+    width: 100%;
+}
+#content{
+    display: grid;
+    grid-area: cards;
+    grid-template-areas: "a b c d"
+                         "e f g h"
+                         "i j k l";
+    padding-top: 1vh;
+}
+#content article{
+    background: #FFF;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    margin: 0 1vw 3vh 1vw;
+}
+#content div{
+    background: #82c6a1;
+    display: grid;
+    grid-template-areas: "title title"
+                         "price buy"
+                         "desc desc";
+    grid-template-rows: 1fr 1fr 8fr;
+}
+#content article img{
+    display: grid;
+    max-width: 95%;
+    margin: .5vh auto;
+}
+#content article h3{
+    display: grid;
+    font-family: 'Righteous', sans-serif;
+    font-size: 22px;
+    grid-area: title;
+    margin: auto;
+}
+#content article h4{
+    display: grid;
+    font-family: 'Righteous', sans-serif;
+    font-size: 20px;
+    grid-area: price;
+}
+#content article button{
+    display: grid;
+    grid-area: buy;
+    width: 80%;
+    height: 80%;
+    margin:auto;
+}
+#content article p{
+    display: grid;
+    grid-area: desc;
+}
+main{
+    background: #c5e5d4;
+    display:grid;
+    grid-area: main;
+    grid-template-areas: "carousel carousel"
+                         "cards sidebar";
+    grid-template-columns: 8fr 2fr;
+    grid-template-rows: 1fr 9fr;
+    margin: 0 2vw;
+}
+sidebar{
+    display:grid;
+    grid-area: sidebar;
+}

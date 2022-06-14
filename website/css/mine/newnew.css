@@ -1,0 +1,53 @@
+@font-face{
+    font-family: 'Righteous';
+    font-weight: 500;
+    font-style: normal;
+    src: local('/fonts/Righteous-Regular.ttf');
+}
+@font-face{
+    font-family: 'Sawarabi Gothic';
+    font-weight: 400;
+    font-style: normal;
+    src: url('/fonts/SawarabiGothic-Regular.ttf');
+}
+#burger{
+    display: block;
+    margin: auto;
+    padding: auto;
+    height: 12vh;
+    width: 12vw;
+}
+#title{
+    color: #FFFFFF;
+    display: block;
+    font-size: 10vw;
+    margin: auto 2vw;
+    text-shadow: 2px 2px #81ac4f;
+    user-select: none;
+    width: 65%;
+}
+#subtitle{
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 2ch;
+    user-select: none;
+}
+.container, .row, .col, .col-2{
+    margin: 0;
+    padding: 0;
+}
+.extra{
+    display:none;
+}
+.navOptions{
+    display: none;
+}
+header{
+    background: #4fac7a;
+    font-family: 'Righteous', sans-serif;
+}
+@media all and (sm){
+    .container .col .row{
+        margin: 0;
+        padding: 0;
+    }
+}

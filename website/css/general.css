@@ -1,0 +1,25 @@
+@import url('SawarabiGothic-Regular.ttf');
+
+.carrousel-item{
+    width: 100%;
+}
+.card{
+    display: block;
+    height: 10%;
+}
+.container{
+    margin: 0 4vw;
+    padding: 0;
+    min-width: 92vw;
+}
+body{
+    background: #ac4f81;
+    display: grid;
+    grid-template-areas: "header"
+                         "nav"
+                         "main"
+                         "footer";
+}
+footer{
+    background-color: gray;
+}

@@ -1,0 +1,43 @@
+#navLogo{
+    color: #FFFFFF;
+    font-family: 'Righteous', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    margin-left: 1vw;
+    position: relative;
+    top: 10%;
+}
+.navLink{
+    background: #c0c0c0;
+    border: 2px solid #FFFFFF;
+    border-style: none solid none solid;
+    color: #7e134e;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 -2px;
+    padding-top: 2vh;
+    text-align: center;
+    text-decoration: none;
+}
+.navLink:hover{
+    background: #505e53;
+    color: #FFFFFF;
+}
+.searcher{
+    display:grid;
+    margin: 1vw;
+}
+nav{
+    background: #505e53;
+    display: grid;
+    grid-area: nav;
+    grid-template-areas: "Logo Inicio About Contacto FAQ Searcher";
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr;
+    margin: 0 2vw;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+nav a{
+    display: grid;
+}
